@@ -2,7 +2,7 @@
 
 # CMPS 2200 Assignment 1
 
-**Name:**_________________________
+**Name:**________Halley Vance_________________
 
 
 In this assignment, you will learn more about asymptotic notation, parallelism, functional languages, and algorithmic cost models. As in the recitation, some of your answer will go here and some will go in `main.py`. You are welcome to edit this `assignment-01.md` file directly, or print and fill in by hand. If you do the latter, please scan to a file `assignment-01.pdf` and push to your github repository. 
@@ -13,35 +13,35 @@ In this assignment, you will learn more about asymptotic notation, parallelism, 
 
   - 1a. Is $2^{n+1} \in O(2^n)$? Why or why not? 
 .  
-.  
+.  Yes, because a constant k > 2 times 2^n is an upper bound for 2^n+1
 .  
 .  
 . 
   - 1b. Is $2^{2^n} \in O(2^n)$? Why or why not?     
 .  
 .  
-.  
+.  No, because when you take the log2 of both functions nlog2 is not an upper bound for 2^n(log2)
 .  
 .  
   - 1c. Is $n^{1.01} \in O(\mathrm{log}^2 n)$?    
 .  
-.  
+.  No, because log^2n is not an upper bound for n^1.01
 .  
 .  
 
   - 1d. Is $n^{1.01} \in \Omega(\mathrm{log}^2 n)$?  
 .  
-.  
+.  Yes, because log^2n is a lower bound for n^1.01
 .  
 .  
   - 1e. Is $\sqrt{n} \in O((\mathrm{log} n)^3)$?  
 .  
-.  
+.  Yes, because (logn)^3 times a constant k is an upper bound for sqrt(n)
 .  
 .  
   - 1f. Is $\sqrt{n} \in \Omega((\mathrm{log} n)^3)$?  
 .  
-.  
+.  No, because (logn)^3 times a constant k is not a lower bound for sqrt(n)
 .  
 .  
 
@@ -54,7 +54,7 @@ $g(n) \in o(f(n))$ means that for **every** positive constant $c$, there exists 
 **Prove** that $o(g(n)) \cap \omega(g(n))$ is the empty set.  
 
 .  
-.  
+.  Since one is always an upper bound and one is always a lower bound and they never are equal, they never intersect. Therefore is an empty set. 
 .  
 .  
 .  
